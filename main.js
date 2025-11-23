@@ -19,9 +19,10 @@ document.querySelector("button").addEventListener("click", () => {
 
     document.getElementById('congrat').textContent = `Congrats, ${name}! Your ticket is ready`;
     document.getElementById('message').textContent = `We've emailed your ticket to ${email} and will send updates in the run up to event.`;
-    document.querySelector(".upload-con").style.display = "none";
-    document.querySelector(".upload-con").innerHTML = "<img src="./ conference - ticket - generator - main / assets / images / pattern - ticket.svg" alt="">"
-
+    // document.querySelector(".upload-con").style.display = "none";
+    document.querySelector(".upload-con").innerHTML = '<img src="./conference-ticket-generator-main/assets/images/pattern-ticket.svg" alt="">';
+    document.querySelector(".upload-con").style.marginTop = "20px";
+    document.querySelector(".upload-con").style.height = "30vh";
 
 })
 
