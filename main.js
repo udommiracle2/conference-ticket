@@ -2,7 +2,7 @@ document.querySelector("button").addEventListener("click", () => {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const gitHub = document.getElementById("text").value;
-    const upload = document.getElementById("upload").file;
+    // const upload = document.getElementById("upload").file;
 
     if (name === "") {
         alert("Please enter full name.");
@@ -10,8 +10,8 @@ document.querySelector("button").addEventListener("click", () => {
     }
     if (!email.includes("@")) {
         alert("Please enter a valid email address.");
-        return;
     }
+
     if (gitHub === "") {
         alert("Username cannot be empty");
         return;
