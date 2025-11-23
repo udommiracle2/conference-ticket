@@ -2,7 +2,7 @@ document.querySelector("button").addEventListener("click", () => {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const gitHub = document.getElementById("text").value;
-    const upload = document.getElementById("upload").value;
+    const upload = document.getElementById("upload").file;
 
     if (name === "") {
         alert("Please enter full name.");
@@ -17,14 +17,10 @@ document.querySelector("button").addEventListener("click", () => {
         return;
     }
 
-    if (upload.size < 500 * 1024){
-        alert("File size must be less than 500KB");
-    }
-
     document.getElementById('congrat').textContent = `Congrats, ${name}! Your ticket is ready`;
     document.getElementById('message').textContent = `We've emailed your ticket to ${email} and will send updates in the run up to event.`;
     document.querySelector(".upload-con").style.display = "none";
-
+    document.querySelector(".upload-con").innerHTML = "<img src="./ conference - ticket - generator - main / assets / images / pattern - ticket.svg" alt="">"
 
 
 })
