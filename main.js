@@ -22,7 +22,9 @@ document.querySelector("button").addEventListener("click", () => {
     // document.querySelector(".upload-con").style.display = "none";
     document.querySelector(".upload-con").innerHTML = '<img src="./conference-ticket-generator-main/assets/images/pattern-ticket.svg" alt="">';
     document.querySelector(".upload-con").style.marginTop = "20px";
-    document.querySelector(".upload-con").style.height = "30vh";
+    document.querySelector(".upload-con").style.height = "20vh";
+    document.querySelector(".upload-con").style.alignItems = "center";
+
 
 })
 
