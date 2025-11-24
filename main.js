@@ -3,6 +3,7 @@ document.querySelector("button").addEventListener("click", () => {
     const email = document.getElementById("email").value;
     const gitHub = document.getElementById("text").value;
     // const upload = document.getElementById("upload").file;
+    const forms = document.querySelector("form");
 
     if (name === "") {
         alert("Please enter full name.");
@@ -17,6 +18,10 @@ document.querySelector("button").addEventListener("click", () => {
         return;
     }
 
+    // if (forms === name, email, gitHub) {
+    //     window.location.href = `mailto:${email}`;
+    // }
+
     document.getElementById('congrat').textContent = `Congrats, ${name}! Your ticket is ready`;
     document.getElementById('message').textContent = `We've emailed your ticket to ${email} and will send updates in the run up to event.`;
     // document.querySelector(".upload-con").style.display = "none";
@@ -27,14 +32,3 @@ document.querySelector("button").addEventListener("click", () => {
 
 
 })
-
-
-
-
-
-
-
-
-
-
-
